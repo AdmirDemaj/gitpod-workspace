@@ -1,0 +1,24 @@
+table:
+  schema: public
+  name: User
+array_relationships:
+  - name: ChatRooms
+    using:
+      foreign_key_constraint_on:
+        column: User_id
+        table:
+          schema: public
+          name: ChatRoom
+  - name: messages
+    using:
+      foreign_key_constraint_on:
+        column: User_Id
+        table:
+          schema: public
+          name: message
+select_permissions:
+  - role: User
+    permission:
+      columns:
+        - User_name
+      filter: {}

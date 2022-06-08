@@ -1,0 +1,34 @@
+table:
+  schema: public
+  name: message
+object_relationships:
+  - name: ChatRoom
+    using:
+      foreign_key_constraint_on: ChatRoom_Id
+  - name: User
+    using:
+      foreign_key_constraint_on: User_Id
+insert_permissions:
+  - role: User
+    permission:
+      check: {}
+      columns:
+        - ChatRoom_Id
+        - User_Id
+        - message_id
+        - message_text
+      backend_only: false
+select_permissions:
+  - role: User
+    permission:
+      columns:
+        - message_created_at
+        - message_text
+      filter: {}
+      limit: 10
+delete_permissions:
+  - role: User
+    permission:
+      filter:
+        User_Id:
+          _eq: X-Hasura-User-Id

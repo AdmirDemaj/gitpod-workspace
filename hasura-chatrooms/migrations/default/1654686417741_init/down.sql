@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS "public"."User" CASCADE;
+DROP TABLE IF EXISTS "public"."message" CASCADE;
+DROP TABLE IF EXISTS "public"."ChatRoom" CASCADE;
