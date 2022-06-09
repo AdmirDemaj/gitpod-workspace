@@ -50,3 +50,5 @@ DO UPDATE SET
 "ChatRoom_Id" = EXCLUDED."ChatRoom_Id",
 "User_Id" = EXCLUDED."User_Id",
 "message_text" = EXCLUDED."message_text"
+
+

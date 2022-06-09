@@ -1,1 +1,1 @@
-DROP TABLE IF EXISTS "public"."User" CASCADE;
+DROP TABLE "public"."User" CASCADE;

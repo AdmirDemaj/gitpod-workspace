@@ -1,5 +1,5 @@
 
-CREATE VIEW IF NOT EXISTS "public"."messages_display1_view" AS
+CREATE VIEW  "public"."messages_display1_view" AS
 SELECT
 
   "c"."id",

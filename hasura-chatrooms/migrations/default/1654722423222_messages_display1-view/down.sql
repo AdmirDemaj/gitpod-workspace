@@ -1,1 +1,1 @@
-DROP TABLE IF EXISTS "public"."messages_display1_view" CASCADE;
+DROP VIEW IF EXISTS "public"."messages_display1_view" CASCADE;

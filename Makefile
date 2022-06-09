@@ -55,6 +55,9 @@ seed:
 # PostgreSQL Migration Utilities
 #
 
+init-metadata:
+	@hasura metadata apply --project hasura-chatrooms
+
 migrate:
 	@hasura migrate apply --project hasura-chatrooms --database-name default
 	

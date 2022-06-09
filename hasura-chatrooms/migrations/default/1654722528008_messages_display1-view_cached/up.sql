@@ -1,4 +1,4 @@
-CREATE MATERIALIZED VIEW IF NOT EXISTS "public"."messages_display1_view" AS
+CREATE  MATERIALIZED VIEW IF NOT EXISTS  "public"."messages_display1_view_cached" AS
 SELECT
 
   "c"."id",
